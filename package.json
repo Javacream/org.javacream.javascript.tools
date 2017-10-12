@@ -8,6 +8,7 @@
     "babel-transpile": "babel src -d dist --ignore *.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run babel-transpile\" \"npm run serve\"",
+    "lint": "jslint 'src/**/*.js'",
     "demo": "echo \"demo\"",
     "predemo": "echo \"pre demo\"",
     "postdemo": "echo \"post demo\""
@@ -23,8 +24,5 @@
     "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
     "prototype": "0.0.5"
-  },
-  "devDependencies": {
-    "babel-preset-env": "^1.6.0"
   }
 }
