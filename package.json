@@ -19,10 +19,11 @@
   ],
   "author": "Javacream",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "concurrently": "^3.5.0",
-    "lite-server": "^2.3.0",
-    "prototype": "0.0.5"
+    "jslint": "^0.11.0",
+    "lite-server": "^2.3.0"
   }
 }
