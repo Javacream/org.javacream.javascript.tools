@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "serve": "lite-server",
-    "babel-transpile": "babel src -d dist --ignore *.js --watch",
+    "babel-transpile": "babel src -d gen --ignore *.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run babel-transpile\" \"npm run serve\"",
     "lint": "jslint 'src/**/*.js'",
+    "pack": "webpack",
     "demo": "echo \"demo\"",
     "predemo": "echo \"pre demo\"",
     "postdemo": "echo \"post demo\""
@@ -19,12 +20,15 @@
   ],
   "author": "Javacream",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "prototype": "0.0.5"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "concurrently": "^3.5.0",
     "jslint": "^0.11.0",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "webpack": "^3.7.1"
   }
 }
