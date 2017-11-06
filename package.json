@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "lite-server",
     "babel-transpile": "babel src -d gen --ignore *.js --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine",
     "start": "concurrently \"npm run babel-transpile\" \"npm run serve\"",
     "lint": "jslint 'src/**/*.js'",
     "pack": "webpack",
@@ -21,13 +21,19 @@
   "author": "Javacream",
   "license": "ISC",
   "dependencies": {
-    "prototype": "0.0.5"
+    "prototype": "0.0.5",
+    "requirejs": "^2.3.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "concurrently": "^3.5.0",
+    "jasmine": "^2.8.0",
     "jslint": "^0.11.0",
+    "karma": "^1.7.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
     "lite-server": "^2.3.0",
     "webpack": "^3.7.1"
   }
